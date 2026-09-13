@@ -6,3 +6,12 @@
       copy:
         content: "{{ hostvars | to_nice_json }}"
         dest: /tmp/local.json
+
+    - name: Publish a message on an MQTT topic
+      community.general.mqtt:
+        server: "192.168.1.30"
+        topic: 'test'
+        payload: 'Hello at {{ ansible_date_time.iso8601 }}'
+        qos: 0
+        retain: false
+        client_id: ans001
