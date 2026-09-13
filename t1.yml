@@ -1,0 +1,8 @@
+- name: t1 test
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Write hostvars
+      copy:
+        content: "{{ hostvars | to_nice_json }}"
+        dest: /tmp/local.json
