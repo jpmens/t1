@@ -1,0 +1,12 @@
+- name: Get information on a random cow
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Get cow information from URI
+      uri:
+        url: "http://cowserver:10000/cow"
+      register: cow
+
+    - name: Display cow data
+      debug:
+        var: cow
