@@ -1,0 +1,5 @@
+- name: Test whether machines are all there
+  hosts: all
+  tasks:
+    - name: Are you there?
+      ping:
