@@ -1,6 +1,7 @@
 - name: Get information on a random cow
   hosts: localhost
   connection: local
+  gather_facts: false
   tasks:
     - name: Get cow information from URI
       uri:
