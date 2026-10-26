@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Hello!"
+figlet "Hello!"
 env
 
 echo "+++ --- here we go!"
