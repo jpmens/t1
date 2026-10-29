@@ -1,0 +1,4 @@
+# myhom (uses secrets.d/myhome.json)
+- hosts: alice
+  tasks:
+    - debug: msg="myhome is {{ login }} with {{ password }}"
