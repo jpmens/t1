@@ -1,4 +1,3 @@
-# myhom (uses secrets.d/myhome.json)
 - hosts: alice
   tasks:
-    - debug: msg="myhome is {{ login }} with {{ password }}"
+    - debug: msg="I'll eat {{ food }} and have {{ drinks }}"
