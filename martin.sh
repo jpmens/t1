@@ -8,3 +8,4 @@ env | grep SEMAPHORE | sed -e 's/^/   /'
 
 echo "+++ --- here we go!"
 echo "Your $INSTALLTYPE is complete"
+echo "Thank you for using $(hostname) today!"
